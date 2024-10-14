@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "bVummrcEQ6XZPb5g6",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li class="active"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </header>
+
+      <div class="contant-container">
+        <div class="email box">
+          <div class="email-con">
+            <img src="IMAGES/E-mail.svg" alt="" />
+            <h1>Jarositek@gmail.com</h1>
+          </div>
+        </div>
+        <div class="linkedin box">
+          <div class="linkedin-con">
+            <a
+              href="https://www.linkedin.com/in/jaros%C5%82aw-sitek-0773b5274/"
+            >
+              <img src="IMAGES/linkedin.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="github-con box">
+          <a href="https://github.com/Drewniak1015">
+            <img src="IMAGES/GitHub.svg" alt="" />
+            <h1>Profil Github</h1>
+            <p>Jarosław Sitek (Drewniak1015)</p>
+          </a>
+        </div>
+        <div class="mobile-con">
+          <div class="mob-email box">
+            <img src="IMAGES/E-mail.svg" alt="" />
+            <h1>Jarositek@gmail.com</h1>
+          </div>
+          <div class="mob-linkedin box">
+            <a
+              href="https://www.linkedin.com/in/jaros%C5%82aw-sitek-0773b5274/"
+            >
+              <img src="IMAGES/linkedin.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-me-section">
+        <h1>Skontaktuj się ze mną</h1>
+        <p>Proszę również o kontakt za pośrednictwem poniższego formularza.</p>
+        <form action="" id="contact-form">
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="John Doe"
+              id="name"
+              name="name"
+              required
+            />
+            <span>Imie</span>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="JohnDoe@gmail.com"
+              id="email"
+              name="email"
+              required
+            />
+            <span>E-mail</span>
+          </div>
+          <div class="input-field">
+            <textarea
+              type="text"
+              placeholder="Wpisz tutaj swoją wiadomość"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <span>Wiadomość</span>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
