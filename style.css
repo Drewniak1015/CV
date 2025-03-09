@@ -94,7 +94,8 @@ header ul li a:hover {
   grid-gap: 1rem;
   grid-template-columns: repeat(6, 10rem);
   grid-template-rows: repeat(3, 6.9rem) 8.4rem 6.9rem 8.4rem;
-  height: 52.5rem;
+  height: auto;
+  padding-bottom: 4rem;
   margin-top: 1rem;
 }
 .box {
@@ -476,7 +477,8 @@ form button {
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 10rem);
     grid-template-rows: repeat(9, 6.9rem);
-    height: 72rem;
+    height: auto;
+    padding-bottom: 4rem;
   }
   .Github {
     grid-area: 5/3/3/5;
