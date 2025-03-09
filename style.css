@@ -513,6 +513,9 @@ form button {
     flex-direction: column;
     margin: 4rem 1.5rem;
   }
+  .projects {
+    padding-bottom: 0rem;
+  }
   .project-card .project-status {
     height: 7rem;
     width: 100%;
@@ -562,7 +565,8 @@ form button {
     flex-direction: column;
     grid-gap: 1rem;
     margin: 1.5rem;
-    height: 52.5rem;
+    padding-bottom: 1rem;
+    height: auto;
   }
   .Github {
     animation: EduAnimation 600ms ease-out;
