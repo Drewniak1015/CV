@@ -393,6 +393,7 @@ header ul li a:hover {
   color: white;
   width: 42rem;
   margin-top: 4rem;
+  padding-bottom: 1rem;
   animation: formanimation 1400ms ease;
 }
 .contact-me-section p {
@@ -479,6 +480,9 @@ form button {
     grid-template-rows: repeat(9, 6.9rem);
     height: auto;
     padding-bottom: 4rem;
+  }
+  .projects {
+    padding-bottom: 2rem;
   }
   .Github {
     grid-area: 5/3/3/5;
@@ -567,7 +571,7 @@ form button {
     flex-direction: column;
     grid-gap: 1rem;
     margin: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     height: auto;
   }
   .Github {
