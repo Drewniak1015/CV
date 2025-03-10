@@ -43,6 +43,8 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
+  overflow: hidden;
 }
 header {
   height: 5.5rem;
@@ -224,10 +226,6 @@ header ul li a:hover {
 }
 .projects {
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 3rem;
 }
 .project-card {
@@ -528,21 +526,14 @@ form button {
     margin: 4rem 1.5rem;
   }
   .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers child elements horizontally */
-    padding: 0 1.5rem; /* Adds padding to prevent touching the edges */
+    padding-bottom: 0rem;
   }
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem 0; /* Removes left/right margin, relying on parent padding */
-    width: 100%; /* Ensures it takes full width of the parent container */
-    max-width: 500px; /* Prevents the card from becoming too wide on larger phones */
+  .project-card .project-status {
+    height: 7rem;
+    width: 100%;
   }
-  /* Ensure child elements within project-card don't overflow */
-  .project-image {
-    height: 20rem; /* Adjust as needed */
+  .project-card .project-image {
+    height: 30rem;
     width: 100%;
   }
   .contact-me-section p {
