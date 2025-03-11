@@ -277,6 +277,7 @@ header ul li a:hover {
 .project-details h2 {
   line-height: 2rem;
   font-size: 1.75rem;
+  word-break: break-all;
 }
 .project-details p {
   font-size: 1.25rem;
@@ -522,7 +523,8 @@ form button {
   .project-card {
     display: flex;
     flex-direction: column;
-    margin: 4rem 1.5rem;
+    width: 85vw;
+    margin: 4rem 0rem;
   }
   .projects {
     padding-bottom: 0rem;
@@ -532,7 +534,7 @@ form button {
     width: 100%;
   }
   .project-card .project-image {
-    height: 30rem;
+    height: 20rem;
     width: 100%;
   }
   .contact-me-section p {
@@ -625,7 +627,39 @@ form button {
     padding: 2rem 0;
   }
 }
-
+@media only screen and (max-width: 400px) {
+  .project-card p {
+    font-size: 1.15rem;
+  }
+  .project-card h1,
+  h2 {
+    font-size: 2rem;
+  }
+  .project-card .project-image {
+    height: 10rem;
+    width: 100%;
+  }
+  header ul li {
+    padding: 0.75rem;
+  }
+  /* beznadziejne query do fixa kiedys */
+  .Main-Container h2 {
+    font-size: 1.35rem;
+  }
+  .Who-i-Am p {
+    font-size: 1rem;
+  }
+  .Who-i-Am h1 {
+    font-size: 1.75rem;
+  }
+  /* .Technologies h1 {
+    text-align: center;
+  } */
+  .images-tech img {
+    width: 2.5rem;
+    margin: 0.5rem;
+  }
+}
 @keyframes StudentAnimation {
   0% {
     transform: translateX(-80%);
@@ -803,6 +837,7 @@ form button {
     opacity: 1;
   }
 }
+
 .mobile-con {
   display: none;
   gap: 1rem;
@@ -850,4 +885,31 @@ form button {
 }
 .mobile-con h1 {
   font-size: 0.75rem;
+}
+.Popup {
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: -80%;
+  left: -20%;
+  animation: fadeInUp 0.3s ease-out;
+}
+.Popup p {
+  color: black;
+}
+.PopupRelative {
+  position: relative;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
